@@ -16,3 +16,5 @@ class Solution:
             elif nums[j]<target<nums[j+1]:
                 return j+1
                 break
+                
+#for O(log n) complexity, use bin search method
