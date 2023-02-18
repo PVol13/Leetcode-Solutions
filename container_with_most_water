@@ -1,0 +1,23 @@
+class Solution:
+    def maxArea(self, height: List[int]) -> int:
+
+        i = 0
+        j = len(height) - 1
+        maxAmt = 0
+
+        while (i < j):
+            ih = height[i]
+            jh = height[j]
+
+            if (ih < jh):
+                water = ih*(j - i)
+                i += 1
+            
+            else:
+                water = jh * (j - i)
+                j -= 1
+
+            if water > maxAmt:
+                maxAmt = water
+
+        return maxAmt
