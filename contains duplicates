@@ -32,3 +32,6 @@ class Solution:
                 return True
             else:
                 hset.add(idx)
+                
+                
+Time complexity : O(n)
